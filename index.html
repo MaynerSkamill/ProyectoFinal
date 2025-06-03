@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+</head>
+<body>
+    
+    <section id="menuLateral">
+
+        <a href="#" class="menuLateral_brnad"><i class="bx bxs - smile menuLateral__icon"></i> TECNODATA</a>
+
+        <ul class="menuLateral__sidemanu">
+
+            <li class="menuLateral__divisor" data-text="OPERACIONES"></li>
+
+            <li>   <a href="#" class="active"> <i class="bx bxs-inbox  menuLateral__icon"></i>Facturar</a></li>
+
+            <li>   <a href="#"> <i class="bx bxs-widget menuLateral__icon"></i>Comprar</a></li>
+
+            <li>   <a href="#"> <i class="bx bxs-inbox menuLateral__icon"></i>Inventarios</a></li>
+
+            <ul class="menuLateral__side-dropdown">
+                <li> <a href="#"> Materia Prima</a></li>
+
+                <li> <a href="#"> Producto Fabricado </a></li>
+
+            </ul>
+
+            
+            <li class="menuLateral__divisor" data-text="CATALOGOS"> CATALOGOS </li>
+
+            <li>   <a href="#" class="active"> <i class="bx bxs-inbox menuLateral__icon"></i>Tabla Catalogos</a></li>
+
+            <ul class="menuLateral__side-dropdown">
+                <li> <a href="#">Categoria</a></li>
+
+                <li> <a href="#">Provedores </a></li>
+
+                <li> <a href="#">Fabrica </a></li>
+
+                <li> <a href="#">Sucursales </a></li>
+
+            </ul>
+
+            <li>  <a href="#" class="active"> <i class="bx bxs-chart menuLateral__icon"></i>Tabla Catalogos</a></li> 
+
+        </ul>
+
+    </section>
+    <!-----Aqui termina el Menu Lateral--------->
+
+
+    <!-----Aqui comienza la seccion del menu de navegacion y el contenido princpal--------->
+    <section id="content">
+
+        <!-----Aqui comienza el menu de navegacion--------->
+        <nav>
+
+            <form class="nav__form" action="#">
+                <div class="nav__form-group">
+                    <input id = "SearchaInput" class="nav__form-group--input" type="text" placeholder="Buscar........">
+                    <i class="bx bx-search nav__form-group--icon"></i>
+                </div>
+            </form>
+
+            <a class="nav__link" href="#"> <i class="bx bxs-bell nav__link-icon"></i> <span class="nav__link-badge">5</span></a>
+            <a class="nav__link" href="#"> <i class="bx bxs-message-square-dots nav__link-icon"></i> <span class="nav__link-badge">8</span></a>
+
+
+            <span class="nav__divider"></span>
+            <div class="nav__profile">
+                <img src="#" class="nav__profile-img">
+                
+                <ul class="nav__profile-link">
+
+                <li> <a href="#"><i class="bx bxs-user-circle nav__link-icon"></i>Perfil</a></li>
+
+                <li> <a href="#"><i class="bx bxs-cong nav__link-icon">Configuracion</i>Perfil</a></li>
+
+                <li> <a href="#"><i class="bx bxs-log-out-circle nav__link-icon">Cerrar Secion</i>Perfil</a></li>
+                
+              
+
+
+            </ul>
+
+
+
+            </div>
+
+
+
+
+        </nav>
+
+        <!-----Aqui termina el menu de navegacion--------->
+
+        <h1 class="main__title"> Panel de control</h1>
+        <ul class="main__migas">
+
+            <li><a href="#"></a></li>
+            <li class="divider"><a href="#"></a></li>
+            <li><a href="#" class="activate">Bienvenido</a></li>
+
+        </ul>
+
+        <div class="main__date">
+            <div class="data__conten-data">
+
+                <h3>Demostracion de consumo de API</h3>     
+
+                <p>Esta tabla Consume: https:/fakestoreapi.com/products para obtener la </p>
+            </div> 
+
+            <div class="main__divTable">
+
+                <div class="main__div-header">
+                    <button onclick="openmodel()" class="main-registro" >Registrar</button>
+
+
+                    <table class="main__divTable-Table">
+
+                        <thead class="main__divTable-Table--thead">
+                            <tr>ID</tr>
+                            <tr>Nombre dek Producto</tr>
+                            <tr>Precio</tr>
+                            <tr>Categoria</tr>
+                            <tr>ACCIONES</tr>
+                        </thead>
+
+                        <tbody id = "productsTableBody"></tbody>
+                    </table>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-----Aqui Empieza el contenido principal---------> <!-----Live preview--------->
+        <main>
+
+
+
+        </main>
+    </section>
+
+
+
+
+
+    
+</body>
+</html>
